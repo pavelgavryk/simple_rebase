@@ -1,5 +1,6 @@
 package com.gmail.gavryk.impl;
 
+import com.gmail.gavryk.AddOperationHandler;
 import com.gmail.gavryk.Calculator;
 import com.gmail.gavryk.SubtractOperationHandler;
 
@@ -11,10 +12,11 @@ import com.gmail.gavryk.SubtractOperationHandler;
 public class CalculatorImpl implements Calculator {
 
 	private SubtractOperationHandler subtractHandler = new SubtractOperationHandlerImpl();
+	private AddOperationHandler addHandler = new AddOperationHandlerImpl();
 
 	@Override
 	public int add(int a, int b) {
-		return 0;
+		return addHandler.add(a, b);
 	}
 
 	@Override
