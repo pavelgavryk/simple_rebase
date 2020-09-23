@@ -15,6 +15,10 @@ public class SubtractOperationHandlerImpl implements SubtractOperationHandler {
 		System.out.println("subtract is in progress...");
 		int result = a - b;
 		System.out.println("subtract result =" + result);
-		return result;
+		return multiplyResult(result, 2);
+	}
+
+	private int multiplyResult(int result, int i) {
+		return result = 2* result;
 	}
 }
