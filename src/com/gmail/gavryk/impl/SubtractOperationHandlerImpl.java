@@ -19,6 +19,7 @@ public class SubtractOperationHandlerImpl implements SubtractOperationHandler {
 	}
 
 	private int multiplyResult(int result, int i) {
+		System.out.println("multiplication...");
 		return result = 2* result;
 	}
 }
