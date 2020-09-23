@@ -11,6 +11,7 @@ public class SubtractOperationHandlerImpl implements SubtractOperationHandler {
 
 	@Override
 	public int subtract(int a, int b) {
+		System.out.println("subtract operation starts");
 		return a - b;
 	}
 }
