@@ -21,6 +21,8 @@ public class CalculatorImpl implements Calculator {
 
 	@Override
 	public int subtract(int a, int b) {
-		return subtractHandler.subtract(a, b);
+		int result = subtractHandler.subtract(a, b);
+		System.out.println("subtract result = "  );
+		return result;
 	}
 }
